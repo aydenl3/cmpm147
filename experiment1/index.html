@@ -24,38 +24,53 @@
     <script type="text/javascript" src="../js/site.js" DEFER></script>
 	<!-- Use me for a JavaScript OOP Project -->
 	<script type="text/javascript" src="./js/project.js" DEFER></script>
-	<!-- Use me for a p5.js project -->
-	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 1 - PRCG DND Item-Maker</h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
-					<!-- canvas will be added here -->
+				  <button id="clicker">reroll it</button>
+				  <div
+					style="font-family: Segoe UI; font-size: 1.2rem; border: thin solid gray; padding: 1em; margin: 1em; box-shadow: 2px 2px 5px gray; background: #ffe;"
+					id="box"
+				  ></div>
+				  <div id="costDisplay" style="font-family: Segoe UI; font-size: 1.2rem; margin-left: 1em;"></div>
 				</div>
-                <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
-                </div>
-			</div>
-
+				<div class="fullscreen-box">
+				  <button id="fullscreen">Fullscreen</button>
+				</div>
+			  </div>
+			  
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>This project aims to be a useful tool for Dungeon Masters playing DND 5E, by allowing them to procedurally generate random loot to fill their shops.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>For this project I created new a new template for the procedurally generated text, imitating the project "bad fantasy quests" given to us.<br>
+					I used new fantasy names and weapon types, and imitated the silly, lighthearted tone of the previous project.<br>
+					After doing this, I attempted to integrate the existing weapon scheme of DND, to make the tool more applicable to in-game use.<br>
+					I did this by incorporating integers into the template, and using them to relate back to the weapon damages, types, properties, and ranges of dnd.<br>
+					Finally, I innovated upon this project by storing and using the data created from this procedurally generated template.<br>
+					I stored the results of each proc gen call into a list, and iterated through the list to find the integers.<br>
+					I ran a simple calculation to determine the cost of the item based on the number of dice, the type of dice, or it's attack range.<br>
+					This displays as the cost at the bottom of the page.<br>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>This project was relatively simple.<br>
+					The process was smooth, and was planned out from the very beginning.<br>
+					The main difficuly with this extension of the original premise was modifying the original code to store the data created by the procedural generator<br>
+					Additionally, I couldn't get the newlines to work on the webpage, even though glitch handles it fine. I imagine that I would have to separate the template into different divs in html?<br>
+					Despite these challenges, I am happy with this final product, and am proud of the unique way it expands upon the original goals of the assignment.<br>					
 			</div>
 
 		</section>
