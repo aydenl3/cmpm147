@@ -38,24 +38,45 @@
 				<div id="canvas-container">
 					<!-- canvas will be added here -->
 				</div>
-                <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
+				
+				<div class="reimagine-box">
+                    
                 </div>
+                <div class="fullscreen-box">
+                    
+                </div>
+				<br>
+				<br>
+				<div class="image-wrapper">
+					<img class="notcatphoto" src="./img/mountainwater.jpg">
+				</div>
 			</div>
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>This experiement attempts to represent the inspiring source image below as a simplified 2D procedurally generated background.<br>				
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>Using random seeds, I generated various complex polygon shapes which followed exponential curves.<br>
+					I then stored each point of each curve such that an exact replica could be recreated in the water's reflection.<br>
+					I created a function to facilitate this drawing process. Then, according to the seed,<br>
+					I created random number and locations of ice floes, which populate the water's surface, selling the image better.<br>
+					These ice floes move according to the timecode, and dissapear if the user hovers over them.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>The primary difficulty in creating this process came from the way I chose to slope the mountains, and use their curvature.<br>
+					The slopeage caused lots of problems, as it would constantly poke into the water wierdly, or obscure great portions of the screen.<br>
+					Additionally, storing and replicating the point on each slope would prove difficult, as because of the random seed,<br>
+					each point had to be stored after it was generated, but before the reflection was generated.<br>
+					The main successes of the project to me was the reflection. It was challenging but rewarding, <br>
+					and to me looks convincing and interesting.
+				</p>
 			</div>
 
 		</section>
