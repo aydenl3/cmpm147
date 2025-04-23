@@ -32,12 +32,19 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 3 - Alternate Worlds</h1>
 
 			<div class="minor-section">
-				<div id="canvas-container">
-					<!-- canvas will be added here -->
+				<div>
+					<button id="reseedButton">
+					  reseed
+					</button>
+					<span id="seedReport"></span>
+					<hr />
+					<span id="canvasContainer" style="margin: 10px;"></span>
+					<textarea cols="20" rows="20" id="asciiBox" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
 				</div>
+				
                 <div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
                 </div>
@@ -45,17 +52,24 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>With this assignment I tried to recreate the retro Rogue style dungeons I played in the past.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>To accomplish this generator, I began with randomly selecting points on the grid, and filling spaces between them to create<br>
+					Square rooms. From there I made sure that the tiles bordering the walls would adapt to the correct shape based on their binary code <br>
+					Then I added hallways, which were selected from random points in the room, and cut into random direction until they found another room <br>
+					Finally I added doors that appeared at entrances, and would only generate if walled in on both sides. <br>
+					To accomplish the glitchy effect that gives the project some life, I added a random chance for the walls to swap tiles with a bright tile<br>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>This project was tough for me. I struggled alot with figuring out the tile adaptation to surrounding tiles, and as a result that sunk lots of time<br>
+					The main successes of this project was the way in which multiple generated rooms can blend into one another, creating interesting and unique layouts. <br>
+				</p>
 			</div>
 
 		</section>
